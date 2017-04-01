@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/mybck">
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/save"
+                android:onClick="saveImg"></LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layoutPhoto">
+        <RelativeLayout
+            android:id="@+id/relImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgMypic"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mmories_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bckFrame"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />-->
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frmMnu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/option"
+                android:onClick="shareImg"></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tranprnt"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/photo_icon"
+            android:onClick="frameGal"></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tranprnt"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutEffect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/effects"
+            android:onClick="popup"></LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/layoutGal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+            <Gallery
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gallery"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutColorEffects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/btnColorCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cancel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutColorEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RED"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    <!--<com.google.ads.AdView
+	    android:id="@+id/adview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	   	ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1454034498476542/3443619716"
+        ads:loadAdOnCreate="true" >
+        </com.google.ads.AdView>-->
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView2"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1454034498476542/3443619716">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
